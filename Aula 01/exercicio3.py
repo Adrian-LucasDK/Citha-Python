@@ -8,4 +8,4 @@ if soma > 20:
     print("Nova valor: ", soma + 8)
 else:
    print("Soma é menor que 20: ", soma)
-   print("Nova valor: ", soma -5)
+   print("Nova valor: ", soma - 5)
