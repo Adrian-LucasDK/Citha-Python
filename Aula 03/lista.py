@@ -1,4 +1,3 @@
-
 #Autor: Adrian Lucas Souza da Silva
 
 # Criando uma lista em Python
