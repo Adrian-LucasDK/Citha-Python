@@ -1,79 +1,87 @@
-﻿Domain Code,Domain,Area Code (M49),Area,Element Code,Element,Item Code (CPC),Item,Year Code,Year,Unit,Value,Flag,Flag Description,Note
-"TCL","Crops and livestock products","124","Canada","5608","Import quantity","02112","Buffalo","2019","2019","An","2","A","Official figure",""
-"TCL","Crops and livestock products","124","Canada","5622","Import value","02112","Buffalo","2019","2019","1000 USD","4","A","Official figure",""
-"TCL","Crops and livestock products","124","Canada","5608","Import quantity","02112","Buffalo","2021","2021","An","9","A","Official figure",""
-"TCL","Crops and livestock products","124","Canada","5622","Import value","02112","Buffalo","2021","2021","1000 USD","11","A","Official figure",""
-"TCL","Crops and livestock products","124","Canada","5609","Import quantity","02151","Chickens","2019","2019","1000 An","27706","A","Official figure",""
-"TCL","Crops and livestock products","124","Canada","5622","Import value","02151","Chickens","2019","2019","1000 USD","55688","A","Official figure",""
-"TCL","Crops and livestock products","124","Canada","5609","Import quantity","02151","Chickens","2020","2020","1000 An","36093","A","Official figure",""
-"TCL","Crops and livestock products","124","Canada","5622","Import value","02151","Chickens","2020","2020","1000 USD","59643","A","Official figure",""
-"TCL","Crops and livestock products","124","Canada","5609","Import quantity","02151","Chickens","2021","2021","1000 An","37770","A","Official figure",""
-"TCL","Crops and livestock products","124","Canada","5622","Import value","02151","Chickens","2021","2021","1000 USD","63632","A","Official figure",""
-"TCL","Crops and livestock products","124","Canada","5609","Import quantity","02151","Chickens","2022","2022","1000 An","31890","A","Official figure",""
-"TCL","Crops and livestock products","124","Canada","5622","Import value","02151","Chickens","2022","2022","1000 USD","65821","A","Official figure",""
-"TCL","Crops and livestock products","124","Canada","5609","Import quantity","02151","Chickens","2023","2023","1000 An","30945","A","Official figure",""
-"TCL","Crops and livestock products","124","Canada","5622","Import value","02151","Chickens","2023","2023","1000 USD","73145","A","Official figure",""
-"TCL","Crops and livestock products","159","China","5608","Import quantity","02112","Buffalo","2021","2021","An","30","A","Official figure",""
-"TCL","Crops and livestock products","159","China","5622","Import value","02112","Buffalo","2021","2021","1000 USD","31","A","Official figure",""
-"TCL","Crops and livestock products","159","China","5608","Import quantity","02112","Buffalo","2023","2023","An","230","A","Official figure",""
-"TCL","Crops and livestock products","159","China","5622","Import value","02112","Buffalo","2023","2023","1000 USD","199","A","Official figure",""
-"TCL","Crops and livestock products","159","China","5609","Import quantity","02151","Chickens","2019","2019","1000 An","8285","E","Estimated value",""
-"TCL","Crops and livestock products","159","China","5622","Import value","02151","Chickens","2019","2019","1000 USD","62870","A","Official figure",""
-"TCL","Crops and livestock products","159","China","5609","Import quantity","02151","Chickens","2020","2020","1000 An","9824","E","Estimated value",""
-"TCL","Crops and livestock products","159","China","5622","Import value","02151","Chickens","2020","2020","1000 USD","60634","A","Official figure",""
-"TCL","Crops and livestock products","159","China","5609","Import quantity","02151","Chickens","2021","2021","1000 An","11944","E","Estimated value",""
-"TCL","Crops and livestock products","159","China","5622","Import value","02151","Chickens","2021","2021","1000 USD","66991","A","Official figure",""
-"TCL","Crops and livestock products","159","China","5609","Import quantity","02151","Chickens","2022","2022","1000 An","8987","E","Estimated value",""
-"TCL","Crops and livestock products","159","China","5622","Import value","02151","Chickens","2022","2022","1000 USD","44075","A","Official figure",""
-"TCL","Crops and livestock products","159","China","5609","Import quantity","02151","Chickens","2023","2023","1000 An","9812","E","Estimated value",""
-"TCL","Crops and livestock products","159","China","5622","Import value","02151","Chickens","2023","2023","1000 USD","51371","A","Official figure",""
-"TCL","Crops and livestock products","392","Japan","5609","Import quantity","02151","Chickens","2019","2019","1000 An","467","A","Official figure",""
-"TCL","Crops and livestock products","392","Japan","5622","Import value","02151","Chickens","2019","2019","1000 USD","8404","A","Official figure",""
-"TCL","Crops and livestock products","392","Japan","5609","Import quantity","02151","Chickens","2020","2020","1000 An","338","A","Official figure",""
-"TCL","Crops and livestock products","392","Japan","5622","Import value","02151","Chickens","2020","2020","1000 USD","6446","A","Official figure",""
-"TCL","Crops and livestock products","392","Japan","5609","Import quantity","02151","Chickens","2021","2021","1000 An","494","A","Official figure",""
-"TCL","Crops and livestock products","392","Japan","5622","Import value","02151","Chickens","2021","2021","1000 USD","10864","A","Official figure",""
-"TCL","Crops and livestock products","392","Japan","5609","Import quantity","02151","Chickens","2022","2022","1000 An","309","A","Official figure",""
-"TCL","Crops and livestock products","392","Japan","5622","Import value","02151","Chickens","2022","2022","1000 USD","9250","A","Official figure",""
-"TCL","Crops and livestock products","392","Japan","5609","Import quantity","02151","Chickens","2023","2023","1000 An","255","A","Official figure",""
-"TCL","Crops and livestock products","392","Japan","5622","Import value","02151","Chickens","2023","2023","1000 USD","7715","A","Official figure",""
-"TCL","Crops and livestock products","643","Russian Federation","5608","Import quantity","02112","Buffalo","2019","2019","An","7","A","Official figure",""
-"TCL","Crops and livestock products","643","Russian Federation","5622","Import value","02112","Buffalo","2019","2019","1000 USD","52","A","Official figure",""
-"TCL","Crops and livestock products","643","Russian Federation","5608","Import quantity","02112","Buffalo","2020","2020","An","43","A","Official figure",""
-"TCL","Crops and livestock products","643","Russian Federation","5622","Import value","02112","Buffalo","2020","2020","1000 USD","171","A","Official figure",""
-"TCL","Crops and livestock products","643","Russian Federation","5608","Import quantity","02112","Buffalo","2021","2021","An","86","A","Official figure",""
-"TCL","Crops and livestock products","643","Russian Federation","5622","Import value","02112","Buffalo","2021","2021","1000 USD","410","A","Official figure",""
-"TCL","Crops and livestock products","643","Russian Federation","5608","Import quantity","02112","Buffalo","2022","2022","An","74","X","Figure from international organizations","Estimated data using trading partners database"
-"TCL","Crops and livestock products","643","Russian Federation","5622","Import value","02112","Buffalo","2022","2022","1000 USD","349","X","Figure from international organizations","Estimated data using trading partners database"
-"TCL","Crops and livestock products","643","Russian Federation","5608","Import quantity","02112","Buffalo","2023","2023","An","32","X","Figure from international organizations","Estimated data using trading partners database"
-"TCL","Crops and livestock products","643","Russian Federation","5622","Import value","02112","Buffalo","2023","2023","1000 USD","116","X","Figure from international organizations","Estimated data using trading partners database"
-"TCL","Crops and livestock products","643","Russian Federation","5609","Import quantity","02151","Chickens","2019","2019","1000 An","4776","I","Imputed value",""
-"TCL","Crops and livestock products","643","Russian Federation","5622","Import value","02151","Chickens","2019","2019","1000 USD","18876","A","Official figure",""
-"TCL","Crops and livestock products","643","Russian Federation","5609","Import quantity","02151","Chickens","2020","2020","1000 An","3095","I","Imputed value",""
-"TCL","Crops and livestock products","643","Russian Federation","5622","Import value","02151","Chickens","2020","2020","1000 USD","15626","A","Official figure",""
-"TCL","Crops and livestock products","643","Russian Federation","5609","Import quantity","02151","Chickens","2021","2021","1000 An","115","A","Official figure",""
-"TCL","Crops and livestock products","643","Russian Federation","5622","Import value","02151","Chickens","2021","2021","1000 USD","17721","A","Official figure",""
-"TCL","Crops and livestock products","643","Russian Federation","5609","Import quantity","02151","Chickens","2022","2022","1000 An","1298","X","Figure from international organizations","Estimated data using trading partners database"
-"TCL","Crops and livestock products","643","Russian Federation","5622","Import value","02151","Chickens","2022","2022","1000 USD","8431","X","Figure from international organizations","Estimated data using trading partners database"
-"TCL","Crops and livestock products","643","Russian Federation","5609","Import quantity","02151","Chickens","2023","2023","1000 An","1284","X","Figure from international organizations","Estimated data using trading partners database"
-"TCL","Crops and livestock products","643","Russian Federation","5622","Import value","02151","Chickens","2023","2023","1000 USD","13952","X","Figure from international organizations","Estimated data using trading partners database"
-"TCL","Crops and livestock products","840","United States of America","5608","Import quantity","02112","Buffalo","2019","2019","An","21355","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5622","Import value","02112","Buffalo","2019","2019","1000 USD","53591","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5608","Import quantity","02112","Buffalo","2020","2020","An","30194","I","Imputed value",""
-"TCL","Crops and livestock products","840","United States of America","5622","Import value","02112","Buffalo","2020","2020","1000 USD","59589","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5608","Import quantity","02112","Buffalo","2021","2021","An","14919","I","Imputed value",""
-"TCL","Crops and livestock products","840","United States of America","5622","Import value","02112","Buffalo","2021","2021","1000 USD","65834","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5608","Import quantity","02112","Buffalo","2022","2022","An","14860","I","Imputed value",""
-"TCL","Crops and livestock products","840","United States of America","5622","Import value","02112","Buffalo","2022","2022","1000 USD","71533","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5608","Import quantity","02112","Buffalo","2023","2023","An","21481","I","Imputed value",""
-"TCL","Crops and livestock products","840","United States of America","5622","Import value","02112","Buffalo","2023","2023","1000 USD","82062","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5609","Import quantity","02151","Chickens","2019","2019","1000 An","1820","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5622","Import value","02151","Chickens","2019","2019","1000 USD","8380","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5609","Import quantity","02151","Chickens","2020","2020","1000 An","1799","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5622","Import value","02151","Chickens","2020","2020","1000 USD","7557","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5609","Import quantity","02151","Chickens","2021","2021","1000 An","2724","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5622","Import value","02151","Chickens","2021","2021","1000 USD","8367","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5609","Import quantity","02151","Chickens","2022","2022","1000 An","4021","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5622","Import value","02151","Chickens","2022","2022","1000 USD","13470","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5609","Import quantity","02151","Chickens","2023","2023","1000 An","2798","A","Official figure",""
-"TCL","Crops and livestock products","840","United States of America","5622","Import value","02151","Chickens","2023","2023","1000 USD","10438","A","Official figure",""
+﻿Area,Item,Year,Value
+Brazil,Chickens,2019,1
+Brazil,Chickens,2019,3967
+Brazil,Chickens,2020,1
+Brazil,Chickens,2020,1028
+Brazil,Chickens,2021,1
+Brazil,Chickens,2021,392
+Brazil,Chickens,2023,3
+Brazil,Chickens,2023,525
+Canada,Buffalo,2019,2
+Canada,Buffalo,2019,4
+Canada,Buffalo,2021,9
+Canada,Buffalo,2021,11
+Canada,Chickens,2019,27706
+Canada,Chickens,2019,55688
+Canada,Chickens,2020,36093
+Canada,Chickens,2020,59643
+Canada,Chickens,2021,37770
+Canada,Chickens,2021,63632
+Canada,Chickens,2022,31890
+Canada,Chickens,2022,65821
+Canada,Chickens,2023,30945
+Canada,Chickens,2023,73145
+China,Buffalo,2021,30
+China,Buffalo,2021,31
+China,Buffalo,2023,230
+China,Buffalo,2023,199
+China,Chickens,2019,8285
+China,Chickens,2019,62870
+China,Chickens,2020,9824
+China,Chickens,2020,60634
+China,Chickens,2021,11944
+China,Chickens,2021,66991
+China,Chickens,2022,8987
+China,Chickens,2022,44075
+China,Chickens,2023,9812
+China,Chickens,2023,51371
+Japan,Chickens,2019,467
+Japan,Chickens,2019,8404
+Japan,Chickens,2020,338
+Japan,Chickens,2020,6446
+Japan,Chickens,2021,494
+Japan,Chickens,2021,10864
+Japan,Chickens,2022,309
+Japan,Chickens,2022,9250
+Japan,Chickens,2023,255
+Japan,Chickens,2023,7715
+Russian Federation,Buffalo,2019,7
+Russian Federation,Buffalo,2019,52
+Russian Federation,Buffalo,2020,43
+Russian Federation,Buffalo,2020,171
+Russian Federation,Buffalo,2021,86
+Russian Federation,Buffalo,2021,410
+Russian Federation,Buffalo,2022,74
+Russian Federation,Buffalo,2022,349
+Russian Federation,Buffalo,2023,32
+Russian Federation,Buffalo,2023,116
+Russian Federation,Chickens,2019,4776
+Russian Federation,Chickens,2019,18876
+Russian Federation,Chickens,2020,3095
+Russian Federation,Chickens,2020,15626
+Russian Federation,Chickens,2021,115
+Russian Federation,Chickens,2021,17721
+Russian Federation,Chickens,2022,1298
+Russian Federation,Chickens,2022,8431
+Russian Federation,Chickens,2023,1284
+Russian Federation,Chickens,2023,13952
+United States of America,Buffalo,2019,21355
+United States of America,Buffalo,2019,53591
+United States of America,Buffalo,2020,30194
+United States of America,Buffalo,2020,59589
+United States of America,Buffalo,2021,14919
+United States of America,Buffalo,2021,65834
+United States of America,Buffalo,2022,14860
+United States of America,Buffalo,2022,71533
+United States of America,Buffalo,2023,21481
+United States of America,Buffalo,2023,82062
+United States of America,Chickens,2019,1820
+United States of America,Chickens,2019,8380
+United States of America,Chickens,2020,1799
+United States of America,Chickens,2020,7557
+United States of America,Chickens,2021,2724
+United States of America,Chickens,2021,8367
+United States of America,Chickens,2022,4021
+United States of America,Chickens,2022,13470
+United States of America,Chickens,2023,2798
+United States of America,Chickens,2023,10438
