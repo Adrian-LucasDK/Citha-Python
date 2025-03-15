@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 # Carregando os dados
-dados_produtos = pd.read_csv('produtos.csv', delimiter=',')
+dados_produtos = pd.read_csv(r'C:\Users\adria\Videos\Citha-Python\Arquivos\produtos.csv', delimiter=',')
 
 # Criando o gráfico de PRECO por ANO para cada PRODUTO
 plt.figure(figsize=(10, 6))
