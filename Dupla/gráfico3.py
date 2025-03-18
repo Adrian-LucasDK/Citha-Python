@@ -11,7 +11,7 @@ quantidades = dados['quantidade']
 
 # Criando o gráfico de linha
 plt.figure(figsize=(8, 5))
-plt.plot(anos, quantidades, marker='o', linestyle='-', color='purple', label='Feminicídios')
+plt.plot(anos, quantidades, marker='o', linestyle='-', color='Magenta', label='Feminicídios')
 
 # Adicionando títulos e rótulos
 plt.title("Evolução da Taxa de Feminicídio no Brasil")
