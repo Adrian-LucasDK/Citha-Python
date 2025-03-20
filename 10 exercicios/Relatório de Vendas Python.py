@@ -15,6 +15,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import schedule
 import time
+import re
 
 def exibir_menu():
     """
@@ -93,7 +94,7 @@ def adicionar_produto(arquivo_csv, arquivo_excel):
 
 def atualizar_produto(arquivo_csv, arquivo_excel):
     """
-    Atualiza um produto existente nos arquivos CSV e Excel.
+    Atualiza um ou mais produtos existentes nos arquivos CSV e Excel.
     """
     # Exibe a lista de produtos
     print("Lista de produtos:")
@@ -103,42 +104,45 @@ def atualizar_produto(arquivo_csv, arquivo_excel):
         for linha in leitor_csv:
             print(linha[0])  # Exibe o nome do produto
 
-    nome_produto = input("Digite o nome do produto que deseja atualizar: ")
+    while True:
+        nome_produto = input("Digite o nome do produto que deseja atualizar (ou 'sair' para finalizar): ")
+        if nome_produto.lower() == 'sair':
+            break
 
-    # Verifica se o produto existe
-    produto_existe = False
-    linhas = []
-    with open(arquivo_csv, 'r', newline='', encoding='utf-8') as arquivo:
-        leitor_csv = csv.reader(arquivo)
-        cabecalho = next(leitor_csv)
-        linhas.append(cabecalho)
-        for linha in leitor_csv:
-            if linha[0] == nome_produto:
-                produto_existe = True
-                quantidade = input("Digite a nova quantidade: ")
-                preco_unitario = input("Digite o novo preço unitário: ")
-                linha[1] = quantidade
-                linha[2] = preco_unitario
-            linhas.append(linha)
+        # Verifica se o produto existe
+        produto_existe = False
+        linhas = []
+        with open(arquivo_csv, 'r', newline='', encoding='utf-8') as arquivo:
+            leitor_csv = csv.reader(arquivo)
+            cabecalho = next(leitor_csv)
+            linhas.append(cabecalho)
+            for linha in leitor_csv:
+                if linha[0] == nome_produto:
+                    produto_existe = True
+                    quantidade = input("Digite a nova quantidade: ")
+                    preco_unitario = input("Digite o novo preço unitário: ")
+                    linha[1] = quantidade
+                    linha[2] = preco_unitario
+                linhas.append(linha)
 
-    if not produto_existe:
-        print("Produto não encontrado.")
-        return
+        if not produto_existe:
+            print("Produto não encontrado.")
+            continue
 
-    # Atualiza o arquivo CSV
-    with open(arquivo_csv, 'w', newline='', encoding='utf-8') as arquivo:
-        escritor_csv = csv.writer(arquivo)
-        escritor_csv.writerows(linhas)
+        # Atualiza o arquivo CSV
+        with open(arquivo_csv, 'w', newline='', encoding='utf-8') as arquivo:
+            escritor_csv = csv.writer(arquivo)
+            escritor_csv.writerows(linhas)
 
-    # Atualiza o arquivo Excel
-    df = pd.read_csv(arquivo_csv)
-    df.to_excel(arquivo_excel, index=False)
+        # Atualiza o arquivo Excel
+        df = pd.read_csv(arquivo_csv)
+        df.to_excel(arquivo_excel, index=False)
 
-    print("Produto atualizado com sucesso!")
+        print("Produto atualizado com sucesso!")
 
 def remover_produto(arquivo_csv, arquivo_excel):
     """
-    Remove um produto dos arquivos CSV e Excel e exibe os dados existentes.
+    Remove um ou mais produtos dos arquivos CSV e Excel e exibe os dados existentes.
     """
     try:
         df = pd.read_csv(arquivo_csv)
@@ -148,9 +152,14 @@ def remover_produto(arquivo_csv, arquivo_excel):
         print(f"Erro: Arquivo {arquivo_csv} não encontrado.")
         return
 
-    produto = input("Digite o nome do produto a ser removido: ")
-    excluir_dados(arquivo_csv, produto)
-    excluir_dados(arquivo_excel, produto)
+    while True:
+        produto = input("Digite o nome do produto a ser removido (ou 'sair' para finalizar): ")
+        if produto.lower() == 'sair':
+            break
+
+        excluir_dados(arquivo_csv, produto)
+        excluir_dados(arquivo_excel, produto)
+        print(f"Produto '{produto}' removido com sucesso.")
 
 # Função para ler os dados do CSV e calcular o total das vendas por produto
 def ler_csv(arquivo):
@@ -205,13 +214,21 @@ def enviar_notificacao(produto_mais_vendido, total_geral):
 
 # Função para exibir um pop-up com o resumo das vendas
 def exibir_popup(produto_mais_vendido, total_geral):
+    """
+    Exibe um pop-up com o resumo das vendas, sempre em primeiro plano e com tamanho ajustado.
+    """
     root = tk.Tk()
-    root.withdraw()  # Esconde a janela principal do tkinter
+    root.title("Resumo de Vendas")  # Título completo
+    root.attributes('-topmost', True)
+
     mensagem = f"Produto mais vendido: {produto_mais_vendido}\nTotal de vendas: R$ {total_geral:.2f}"
-    # Exibe um pop-up com a mensagem
-    messagebox.showinfo("Resumo de Vendas", mensagem)
-    root.lift()  # Trazer a janela para o topo
-    root.destroy()  # Fecha a janela
+    label = tk.Label(root, text=mensagem, font=("Arial", 14))  # Aumenta a fonte
+    label.pack(padx=30, pady=30)  # Aumenta o padding
+
+    botao_ok = tk.Button(root, text="OK", command=root.destroy, font=("Arial", 12))  # Aumenta a fonte do botão
+    botao_ok.pack(pady=15)
+
+    root.mainloop()
 
 # Função para gerar um relatório de vendas em formato Excel
 from openpyxl import load_workbook
@@ -442,17 +459,34 @@ def obter_credenciais_email():
     destinatario_entry = tk.Entry(root, width=40)
     destinatario_entry.pack()
 
-    def enviar_e_destruir(): # Função interna
+    def enviar_e_destruir():  # Função interna
         root.credenciais = enviar()
-        root.destroy()
+        if root.credenciais:
+            root.destroy()
 
     def enviar():
         remetente = remetente_entry.get()
         senha = senha_entry.get()
         destinatario = destinatario_entry.get()
+
+        if not validar_email(remetente):
+            messagebox.showerror("Erro", "E-mail do remetente inválido")
+            return None
+
+        if not validar_email(destinatario):
+            messagebox.showerror("Erro", "E-mail do destinatário inválido")
+            return None
+
         return remetente, senha, destinatario
 
-    enviar_button = tk.Button(root, text="Enviar", command=enviar_e_destruir) # Usando função interna
+    def validar_email(email):
+        padrao = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        if re.match(padrao, email):
+            return True
+        else:
+            return False
+
+    enviar_button = tk.Button(root, text="Enviar", command=enviar_e_destruir)  # Usando função interna
     enviar_button.pack()
 
     root.mainloop()
@@ -461,22 +495,6 @@ def obter_credenciais_email():
         return root.credenciais
     else:
         return None
-
-def executar_analise():
-    """
-    Função que executa o script de análise.
-    """
-    # Coloque aqui o código do seu script de análise
-    print("Executando análise...")
-
-# Agendar a execução da função todos os dias às 9h
-schedule.every().day.at("09:00").do(executar_analise)
-
-while True:
-    schedule.run_pending()
-    time.sleep(1)
-    break
-
 
 # Código principal
 if __name__ == "__main__":
