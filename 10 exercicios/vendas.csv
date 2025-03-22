@@ -1,6 +1,2 @@
-Produto,Quantidade,Preço
-banana,20,5
-Melancia,100,25
-beterraba,10,3.0
-tangerina,1,10.0
-limão,10,5.0
+Produto,Quantidade,Preço,Custo
+
