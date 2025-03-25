@@ -32,15 +32,6 @@ def analisar_dados(arquivo_csv, pasta_destino):
         # 1. Leitura dos Dados
         df = pd.read_csv(arquivo_csv)
 
-        # Limpar e converter as colunas numéricas
-        for col in ['inflacao', 'salario', 'cesta']:
-            if col in df.columns:
-                df[col] = df[col].astype(str).str.replace('%', '', regex=False).str.replace(',', '.', regex=False).str.strip()
-                if col in ['salario', 'cesta']:
-                    df[col] = df[col].astype(str).str.replace('R\$', '', regex=False).str.replace('.', '', regex=False).str.replace(',', '.', regex=False).str.strip()
-                df[col] = pd.to_numeric(df[col], errors='coerce')
-                df.dropna(subset=[col], inplace=True)
-
         # Verificando se as colunas esperadas existem
         colunas_esperadas = ['ano', 'inflacao', 'salario', 'cesta']
         if not all(col in df.columns for col in colunas_esperadas):
